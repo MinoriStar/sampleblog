@@ -1,0 +1,153 @@
+body {
+    background-color:#efefef;
+    font-size: 12px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5 {
+    marign: 0 0 10px 0;
+    padding: 0;
+}
+header {
+    margin-top: 0;
+}
+
+.container {
+    width: 920px;
+    margin: 0 auto 0 auto;
+    background-color: #fff;
+}
+
+.header-title-area {
+    width: 100%;
+    padding: 20px 0 0 0;
+}
+
+.logo {
+    font-size: 30px;
+    text-align: center;
+}
+
+.header-navigation {
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0 10px 0;
+}
+
+.header-navigation:after {  /* afterは「擬似要素」.指定した要素の直後に何かを指定することができる */
+    clear: both; /* ここでは下記コマンドfloat:leftを解除して続く要素が回り込むことを回避する　*/
+    display: block;
+    content: " ";
+}
+
+.header-navigation li {
+    float: left;
+    padding: 0 30px;
+    text-align: center;
+    list-style-type: none;
+}
+
+.header-navigation li a {
+    color: #fff;
+    text-decoration: none;
+}
+    
+.card-contents {
+    width: 590px;
+    display: block;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.left-contents {
+    width: 600px;
+    float: left;
+}
+
+.right-contents {
+    width: 300px; 
+    float: right;
+}
+
+.sub-title {
+    font-weight: bold;
+    color: #666;
+}
+
+.main-title {
+    color: #4169E1;
+}
+
+.text-list {
+    width: 410px;
+    float: right;
+}
+
+.image-list {
+    float: left;
+    margin-left: 30px;
+}
+
+.staff-image {
+    margin-top: 10px;
+    width: 125px;
+    height: 125px;
+    display: block;
+}
+
+.sub-contents {
+    width: 270px;
+    display: block;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    background-color: #fff;   
+}
+
+.sub-contents h2 {
+    border-bottom: 2px solid #cccccc;
+    padding-bottom: 12px;
+}
+
+.sub-image {
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+    display: block;   
+}
+
+table td {
+    font-size: 6px;
+}
+
+table p {
+    font-size: 8px;
+    color: #4169E1;
+    font-weight: bold;
+}
+
+.footer-title-area {
+    width: 920px;
+    margin: 0 auto 0 auto;
+    background-color: #fff;
+    padding: 15px 0 20px 0;
+}
+
+.copyright {
+    color:#777;
+    text-align: center;
+    border-top: 2px solid #cccccc;
+    padding-top: 16px;
+}
+
+.footer-contents {
+    width: 870px;
+    margin: 0 auto 0 auto;
+}
+
+.main:after {  /* mainのfloatを解除しないとfooterが回り込んでしまう　*/
+    clear: both;
+    display: block;
+    content: " ";
+}
